@@ -3,5 +3,5 @@ services:
   - docker
 
 script:
-  - docker build -t atyenoria/janus-gateway-docker .
+  - docker build -t atyenoria/janus-webrtc-gateway-docker .
   - echo "success"
