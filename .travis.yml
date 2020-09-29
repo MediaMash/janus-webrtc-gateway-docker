@@ -5,3 +5,9 @@ services:
 script:
   - docker build -t atyenoria/janus-webrtc-gateway-docker .
   - echo "success"
+
+deploy:
+  provider: script
+  script: bash scripts/deploy-aws.sh
+  on:
+    branch: master
